@@ -30,11 +30,14 @@ body {
 
 /* Sidebar Styles */
 .sidebar {
+    display: flex;
+    flex-direction: column;
     width: 250px;
     flex-shrink: 0;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
+    justify-content: space-between;
 }
 
 .sidebar h2 {
@@ -61,6 +64,55 @@ body {
 
 .sidebar a:hover {
     color: #fff;
+}
+
+/* Logo/Header Link */
+.sidebar-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #e0e0e0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.sidebar-logo:hover {
+    color: #ffffff;
+}
+
+/* Logo Image or Text */
+.logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e0e0e0;
+}
+
+/* Social Media Links at Bottom */
+.sidebar-social {
+    display: flex;
+    gap: 15px;
+    margin-top: auto;
+    padding-top: 20px;
+    border-top: 1px solid rgba(224, 224, 224, 0.2);
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    filter: invert(100%) brightness(70%); /* Light-colored icons */
+    transition: filter 0.3s;
+}
+
+.social-icon:hover {
+    filter: invert(100%) brightness(100%); /* Brighten on hover */
 }
 
 /* Main Content */
