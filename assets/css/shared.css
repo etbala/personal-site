@@ -1,14 +1,14 @@
 /* Essential Fonts */
 @font-face {
     font-family: 'Alliance No.1';
-    src: url('./fonts/AllianceNo1-Regular.ttf') format('truetype');
+    src: url('/assets/fonts/AllianceNo1-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Alliance No.2';
-    src: url('./fonts/AllianceNo2-Regular.ttf') format('truetype');
+    src: url('/assets/fonts/AllianceNo2-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
