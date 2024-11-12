@@ -152,7 +152,7 @@ body {
 
 .repo-link {
     font-size: 0.9rem;
-    color: #d0d0d0;
+    color: #8da5a0;
     text-decoration: none;
     position: relative;
     overflow: hidden;
@@ -167,7 +167,7 @@ body {
     bottom: 0;
     width: 0%;
     height: 0.05rem;
-    background-color: #d0d0d0;
+    background-color: #6da599;
     transition: width 0.4s ease-in-out;
 }
 
@@ -176,7 +176,7 @@ body {
 }
 
 .repo-link:hover {
-    animation: colorTransition 0.6s forwards;
+    color: #6da599;
 }
 
 /* Main Content */
@@ -221,12 +221,18 @@ body {
 }
 
 .content::-webkit-scrollbar {
-    width: 8px;
+    width: 6px;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .content::-webkit-scrollbar-thumb {
-    background-color: #555;
+    background-color: rgba(136, 136, 136, 0.8);
     border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.content::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(170, 170, 170, 0.9);
 }
 
 /* Container for each entry */
@@ -323,4 +329,38 @@ body {
     color: #d0d0d0;
     line-height: 1.6;
     margin-bottom: 0.313rem;
+}
+
+/* Technologies Section Styling */
+.tech-category {
+    margin-bottom: 20px;
+}
+
+.tech-category h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tech-list li {
+    font-size: 1rem;
+    color: #d0d0d0;
+    padding: 5px 10px;
+    background-color: rgba(255, 255, 255, 0.06);
+    border-radius: 8px;
+    transition: color 0.1s ease;
+}
+
+.tech-list li:hover {
+    color: #eee;
 }
