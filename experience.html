@@ -11,24 +11,18 @@
     <div class="background-animation"></div>
     <div class="container">
         <aside class="sidebar">
-            <!-- Home Link at Top -->
             <a href="index.html" class="sidebar-logo">
-                <img src="images/logo.png" alt="Logo" class="logo"> <!-- Replace with text if desired -->
-                <!-- Or use text instead of logo -->
-                <!-- <span class="logo-text">Ethan Balakumar</span> -->
+                <img src="images/logo.png" alt="Logo" class="logo">
             </a>
         
-            <!-- Navigation Links -->
             <ul>
-                <li><a href="#profile">Profile</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#work-experience">Work Experience</a></li>
-                <li><a href="#open-source">Open Source Contributions</a></li>
-                <li><a href="#extracurriculars">Extracurriculars</a></li>
-                <li><a href="#technologies">Technologies</a></li>
+                <li><a class="sidebar-link" href="#education">Education</a></li>
+                <li><a class="sidebar-link" href="#work-experience">Work Experience</a></li>
+                <li><a class="sidebar-link" href="#projects">Projects</a></li>
+                <li><a class="sidebar-link" href="#extracurriculars">Extracurriculars</a></li>
+                <li><a class="sidebar-link" href="#technologies">Technologies</a></li>
             </ul>
         
-            <!-- Social Media Links at Bottom -->
             <div class="sidebar-social">
                 <a href="https://github.com/etbala" target="_blank">
                     <img src="icons/github.svg" alt="GitHub Icon" class="social-icon">
@@ -36,14 +30,16 @@
                 <a href="https://linkedin.com/in/ebalakumar" target="_blank">
                     <img src="icons/linkedin.svg" alt="LinkedIn Icon" class="social-icon">
                 </a>
+                
+                <div class="social-text">
+                    Made with 
+                    <img src="icons/heart.svg" alt="Heart Icon" class="heart-icon"> 
+                    on <a href="https://github.com/etbala/personal-site" target="_blank" class="repo-link">GitHub</a>
+                </div>
             </div>
         </aside>
         
         <main class="content">
-            <section id="profile">
-                <h2>Profile</h2>
-                <p>Insert tagline here...</p>
-            </section>
             <section id="education">
                 <h2>Education</h2>
                 <div class="content-entry">
@@ -68,7 +64,6 @@
                             <span class="entry-subheader">Software Engineer Intern</span>
                         </div>
                         <span class="entry-location">Binghamton, NY</span>
-                        <!-- <a href="https://example.com" class="entry-location" target="_blank">Project Link</a> -->
                     </div>
                     
                     <div class="entry-meta">
@@ -83,15 +78,15 @@
                     </ul>
                 </div>
             </section>
-            <section id="open-source">
-                <h2>Open Source Contributions</h2>
+            <section id="projects">
+                <h2>Projects</h2>
                 <div class="content-entry">
                     <div class="entry-header">
                         <div class="entry-title-group">
                             <h3 class="entry-title">RPI Search Engine</h3>
                             <span class="entry-subheader">Project Co-Lead</span>
                         </div>
-                        <a href="https://github.com/OrgNameHere" class="entry-location" target="_blank">https://github.com/OrgNameHere</a>
+                        <a href="https://github.com/OrgNameHere" class="entry-url" target="_blank">github.com/OrgNameHere</a>
                     </div>
                     
                     <div class="entry-meta">
@@ -99,10 +94,7 @@
                         
                     </div>
                     <ul class="entry-details">
-                        <li>Insert Bullet Point Information Here...</li>
-                        <li>Insert Bullet Point Information Here...</li>
-                        <li>Insert Bullet Point Information Here...</li>
-                        <li>Insert Bullet Point Information Here...</li>
+                        <li>Details to be announced...</li>
                     </ul>
                 </div>
                 <div class="content-entry">
@@ -110,8 +102,7 @@
                         <div class="entry-title-group">
                             <h3 class="entry-title">LeetCode Duels</h3>
                         </div>
-                        <!-- <span class="entry-location">Troy, NY</span> -->
-                        <a href="https://github.com/etbala/LeetCodeDuels" class="entry-location" target="_blank">https://github.com/etbala/LeetCodeDuels</a>
+                        <a href="https://github.com/etbala/LeetCodeDuels" class="entry-url" target="_blank">github.com/etbala/LeetCodeDuels</a>
                     </div>
                     
                     <div class="entry-meta">
@@ -130,7 +121,7 @@
                         <div class="entry-title-group">
                             <h3 class="entry-title">CacheDB</h3>
                         </div>
-                        <a href="https://github.com/etbala/CacheDB" class="entry-location" target="_blank">https://github.com/etbala/CacheDB</a>
+                        <a href="https://github.com/etbala/CacheDB" class="entry-url" target="_blank">github.com/etbala/CacheDB</a>
                     </div>
                     
                     <div class="entry-meta">
@@ -149,7 +140,7 @@
                         <div class="entry-title-group">
                             <h3 class="entry-title">Firm Valuation Calculator</h3>
                         </div>
-                        <a href="https://github.com/etbala/ValuationCalculator-Backend" class="entry-location" target="_blank">https://github.com/etbala/ValuationCalculator</a>
+                        <a href="https://github.com/etbala/ValuationCalculator-Backend" class="entry-url" target="_blank">github.com/etbala/ValuationCalculator</a>
                     </div>
                     
                     <div class="entry-meta">
@@ -175,5 +166,6 @@
         </main>
     </div>
     <script src="bg-anim.js"></script>
+    <script src="experience.js"></script>
 </body>
 </html>
