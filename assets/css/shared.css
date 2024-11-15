@@ -13,6 +13,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Alliance No.2';
+    src: url('./fonts/AllianceNo2-Light.otf') format('opentype');
+    font-weight: lighter;
+    font-style: normal;
+}
+
 /* Particle Animation */
 .background-animation {
     position: absolute;
