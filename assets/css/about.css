@@ -2,9 +2,10 @@
 
 body {
     font-family: 'Alliance No.2', sans-serif;
+    letter-spacing: 0.05em;
     margin: 0;
     padding: 0;
-    background-color: #171717;
+    background-color: #1e1e1e;
     display: flex;
     justify-content: center;
     align-items: flex-start;
