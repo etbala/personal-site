@@ -18,6 +18,7 @@ body {
     width: 80%;
     max-width: 75rem;
     min-height: 84vh;
+    min-width: 63rem;
     margin-top: 2.5rem;
     padding: 1.25rem;
     border-radius: .75rem;
@@ -39,11 +40,6 @@ body {
     border-radius: 0.625rem;
     justify-content: space-between;
     background: linear-gradient(45deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7));
-}
-
-.sidebar h2 {
-    font-size: 1.5rem;
-    color: #e0e0e0;
 }
 
 .sidebar ul {
@@ -180,6 +176,10 @@ body {
     padding: 20px;
 }
 
+.section-header {
+    text-decoration: none;
+}
+
 .content h2 {
     font-size: 1.8rem;
     font-weight: lighter;
@@ -188,7 +188,7 @@ body {
     padding-bottom: 0.313rem;
     margin-bottom: 1rem;
     position: relative;
-    transition: color 0.4s ease
+    transition: color 0.4s ease;
 }
 
 /* Underline transition effect */
@@ -312,6 +312,7 @@ body {
 .entry-date {
     font-size: 0.9rem;
     font-style: italic;
+    font-family: 'Alliance No.1', sans-serif;
 }
 
 .entry-details {

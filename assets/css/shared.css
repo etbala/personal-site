@@ -20,8 +20,6 @@
     font-style: normal;
 }
 
-
-
 /* Particle Animation */
 .background-animation {
     position: absolute;
@@ -43,9 +41,9 @@
 
 @keyframes particle-float {
     from {
-        transform: translateY(0) translateX(0);
+        transform: translate(0, 0);
     }
     to {
-        transform: translateY(-100vh) translateX(20vw);
+        transform: translate(20vw, -100vh);
     }
 }
