@@ -35,8 +35,8 @@ body {
 .links {
     display: flex;
     justify-content: center;
-    gap: 30px;
-    margin-top: 10px;
+    gap: 1.9rem;
+    margin-top: 0.6rem;
 }
 
 .links a {
@@ -75,4 +75,23 @@ body {
   
 @keyframes blink {
     50% { border-color: transparent; }
+}
+
+@media screen and (max-width: 768px) {
+    .typing {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    
+    .links {
+        display: block;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 0rem;
+    }
+
+    .links a {
+        font-size: 1.2rem;
+        padding: 0.4rem 0rem;
+    }
 }
