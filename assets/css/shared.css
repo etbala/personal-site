@@ -12,7 +12,7 @@
     --color-text-bright: #eaeaea;
 
     /* Accents */
-    --color-link: #CDBD98;
+    --color-link: #e4d1a5;
     --color-accent: #FFD166;
     --color-accent-alt: #ffb35c;
 
@@ -64,7 +64,7 @@
     --color-particle: rgba(0, 0, 0, 0.1);
 
     /* Shadows */
-    --color-box-shadow: rgba(255, 255, 255, 0.3);
+    --color-box-shadow: rgba(0, 0, 0, 0.15);
     --color-elem-bg: rgba(0, 0, 0, 0.06);
 
     /* Icons */
