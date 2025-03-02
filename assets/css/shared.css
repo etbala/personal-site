@@ -124,6 +124,10 @@ body::-webkit-scrollbar-thumb:hover {
     z-index: 1;
 }
 
+* {
+    scroll-behavior: smooth;
+}
+
 .particle {
     position: absolute;
     background-color: var(--color-particle);

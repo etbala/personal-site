@@ -9,6 +9,50 @@
 </head>
 <body>
     <div class="background-animation"></div>
+    <nav role="navigation" class="hamburger-nav">
+        <div id="menuToggle">
+            <input type="checkbox" id="menuCheckbox" />
+            
+            <!-- Some spans to act as a hamburger. -->
+            <span></span>
+            <span></span>
+            <span></span>
+            
+            <ul id="menu">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="#education">
+                        <label for="menuCheckbox" onclick="this.parentNode.click();">Education</label>
+                    </a>
+                </li>
+                <li>
+                    <a href="#work-experience">
+                        <label for="menuCheckbox" onclick="this.parentNode.click();">Work Experience</label>
+                    </a>
+                </li>
+                <li>
+                    <a href="#projects">
+                        <label for="menuCheckbox" onclick="this.parentNode.click();">Projects</label>
+                    </a>
+                </li>
+                <li>
+                    <a href="#extracurriculars">
+                        <label for="menuCheckbox" onclick="this.parentNode.click();">Extracurriculars</label>
+                    </a>
+                </li>
+                <li>
+                    <a href="#technologies">
+                        <label for="menuCheckbox" onclick="this.parentNode.click();">Technologies</label>
+                    </a>
+                </li>
+                <button id="theme-toggle">
+                    <img src="/assets/icons/moon.svg" alt="Theme" class="theme-icon">
+                </button>
+            </ul>
+        </div>
+    </nav>
     <div class="container">
         <aside class="sidebar">
             <a href="/" class="sidebar-logo">
@@ -25,10 +69,10 @@
         
             <div class="sidebar-social">
                 <a href="https://github.com/etbala" target="_blank">
-                    <img src="/assets/icons/github.svg" alt="GitHub Icon" class="social-icon">
+                    <img src="/assets/icons/github.svg" alt="GitHub" class="social-icon">
                 </a>
                 <a href="https://linkedin.com/in/ebalakumar" target="_blank">
-                    <img src="/assets/icons/linkedin.svg" alt="LinkedIn Icon" class="social-icon">
+                    <img src="/assets/icons/linkedin.svg" alt="LinkedIn" class="social-icon">
                 </a>
                 
                 <div class="social-text">
@@ -39,8 +83,7 @@
             </div>
         </aside>
         
-        <main class="content">
-            <!-- <button id="theme-toggle">Toggle Theme</button> -->
+        <main class="content">            
             <section id="education">
                 <a class="section-header" href="#education">
                     <h2>Education</h2>
@@ -246,6 +289,6 @@
         </main>
     </div>
     <script src="/assets/js/bg-anim.js"></script>
-    <!-- <script src="/assets/js/theme-toggle.js"></script> -->
+    <script src="/assets/js/theme-toggle.js"></script>
 </body>
 </html>
