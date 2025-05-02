@@ -1,4 +1,50 @@
+@font-face {
+    font-family: 'Alliance No.1';
+    src: url('./fonts/AllianceNo1-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alliance No.2';
+    src: url('./fonts/AllianceNo2-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alliance No.2';
+    src: url('./fonts/AllianceNo2-Light.otf') format('opentype');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Funnel Sans';
+    src: url('./fonts/FunnelSans-Regular.ttf') format('truetype');
+    font-weight: 1 999;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Funnel Sans';
+    src: url('./fonts/FunnelSans-Italic.ttf') format('truetype');
+    font-weight: 1 999;
+    font-style: italic;
+    font-display: swap;
+}
+
 :root {
+    --font-primary: 'Alliance No.2';
+    --font-primary: 'Alliance No.2';
+    --font-secondary: 'Alliance No.1';
+
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+
     /* Backgrounds and containers */
     --color-body-bg: #1e1e1e;
     --color-container-bg: rgba(42, 42, 42, 0.25);
@@ -76,27 +122,6 @@
     --color-scrollbar: rgba(100, 100, 100, 0.8);
     --color-scrollbar-bg: rgba(0, 0, 0, 0.1);
     --color-scrollbar-hover: rgba(85, 85, 85, 0.9);
-}
-
-@font-face {
-    font-family: 'Alliance No.1';
-    src: url('./fonts/AllianceNo1-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Alliance No.2';
-    src: url('./fonts/AllianceNo2-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Alliance No.2';
-    src: url('./fonts/AllianceNo2-Light.otf') format('opentype');
-    font-weight: lighter;
-    font-style: normal;
 }
 
 body::-webkit-scrollbar {

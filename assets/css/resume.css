@@ -1,7 +1,7 @@
 @import url('shared.css');
 
 body {
-    font-family: 'Alliance No.2', sans-serif;
+    font-family: var(--font-primary), sans-serif;
     letter-spacing: 0.05em;
     margin: 0;
     padding: 0;
@@ -246,14 +246,14 @@ body {
 }
 
 .entry-subheader {
-    font-family: 'Alliance No.1', sans-serif;
+    font-family: var(--font-secondary), sans-serif;
     font-size: 1.2rem;
     color: var(--color-text-tertiary);
     margin-top: 0.125rem;
 }
 
 .entry-location {
-    font-family: 'Alliance No.1', sans-serif;
+    font-family: var(--font-secondary), sans-serif;
     font-size: 1rem;
     color: var(--color-text-muted);
     font-style: italic;
@@ -261,7 +261,7 @@ body {
 }
 
 .entry-url {
-    font-family: 'Alliance No.1', sans-serif;
+    font-family: var(--font-secondary), sans-serif;
     font-size: 0.85rem;
     color: var(--color-link);
     margin-right: 1rem;
@@ -303,7 +303,7 @@ body {
 .entry-date {
     font-size: 0.9rem;
     font-style: italic;
-    font-family: 'Alliance No.1', sans-serif;
+    font-family: var(--font-secondary), sans-serif;
 }
 
 .entry-details {
@@ -313,7 +313,7 @@ body {
 }
 
 .entry-details li {
-    font-family: 'Alliance No.1', sans-serif;
+    font-family: var(--font-secondary), sans-serif;
     color: var(--color-text-muted);
     line-height: 1.6;
     margin-bottom: 0.313rem;
@@ -341,7 +341,7 @@ body {
 }
 
 .tech-list li {
-    font-family: 'Alliance No.1', sans-serif;
+    font-family: var(--font-secondary), sans-serif;
     font-size: 1rem;
     color: var(--color-text-muted);
     padding: 5px 10px;
