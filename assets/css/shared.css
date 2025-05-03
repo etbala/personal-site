@@ -36,7 +36,7 @@
 }
 
 :root {
-    --font-primary: 'Alliance No.2';
+    --font-title: 'Alliance No.2';
     --font-primary: 'Alliance No.2';
     --font-secondary: 'Alliance No.1';
 
@@ -49,6 +49,7 @@
     --color-body-bg: #1e1e1e;
     --color-container-bg: rgba(42, 42, 42, 0.25);
     --gradient-sidebar: linear-gradient(45deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7));
+    --color-header-bg: #38383d;
 
     /* Text colors */
     --color-text-primary: #e0e0e0;
