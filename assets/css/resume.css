@@ -359,7 +359,7 @@ body {
 }
 
 /* Hamburger Menu Styles */
-#menuToggle {
+.menuToggle {
     display: block;
     position: fixed;
     top: 40px;
@@ -369,7 +369,7 @@ body {
     user-select: none;
 }
 
-#menuToggle input {
+.menuToggle input {
     display: block;
     width: 40px;
     height: 32px;
@@ -382,7 +382,7 @@ body {
     -webkit-touch-callout: none;
 }
 
-#menuToggle span {
+.menuToggle span {
     display: block;
     width: 33px;
     height: 4px;
@@ -397,34 +397,34 @@ body {
                 opacity 0.55s ease;
 }
   
-#menuToggle span:first-child {
+.menuToggle span:first-child {
     transform-origin: 0% 0%;
 }
 
-#menuToggle span:nth-last-child(2) {
+.menuToggle span:nth-last-child(2) {
     transform-origin: 0% 100%;
 }
 
-#menuToggle input:checked ~ span {
+.menuToggle input:checked ~ span {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
 }
 
-#menuToggle input:checked ~ span:nth-last-child(3) {
+.menuToggle input:checked ~ span:nth-last-child(3) {
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-#menuToggle input:checked ~ span:nth-last-child(2) {
+.menuToggle input:checked ~ span:nth-last-child(2) {
     transform: rotate(-45deg) translate(0, -1px);
 }
 
-#menu {
+.menu {
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    width: 100vw;
-    max-width: 300px;
-    min-width: 300px;
-    max-height: 100vh;
+    width: 300px;
+    height: 105vh;
     margin: -100px 0 0 -50px;
     padding: 50px;
     padding-top: 125px;
@@ -436,18 +436,19 @@ body {
     transform-origin: 0% 0%;
     transform: translate(-100%, 0);
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    box-shadow: 0 4px 1.25rem var(--color-box-shadow);
 }
 
-#menu li {
+.menu li {
     padding: 10px 0;
     font-size: 22px;
 }
 
-#menu li label {
+.menu li label {
     cursor: pointer;
 }
 
-#menu a {
+.menu a {
     color: var(--color-text-primary);
     text-decoration: none;
     font-size: 1.2rem;
@@ -456,7 +457,7 @@ body {
     transition: color 0.3s;
 }
 
-#menu a::after {
+.menu a::after {
     content: '';
     position: absolute;
     left: 0;
@@ -467,12 +468,44 @@ body {
     transition: width 0.4s ease-in-out;
 }
 
-#menu a:hover::after {
+.menu a:hover::after {
     width: 100%;
 }
 
+.footer-group {
+    margin-top: auto;     /* pushes this item to the bottom */
+}
+
+.footer-group a {
+    transition: none;
+}
+
+.footer-group a::after {
+    content: none;
+    text-decoration: none;
+    transition: none;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 35px;
+}
+
+.footer-icons .social-icon {
+    width: 2rem;
+    height: 2rem;
+    filter: var(--social-icon-filter);
+    transition: filter 0.3s;
+}
+
+.footer-icons .social-icon:hover {
+    filter: var(--social-icon-hover-filter);
+}
+
 /* Slide in the menu when checked */
-#menuToggle input:checked ~ ul {
+.menuToggle input:checked ~ ul {
     transform: none;
 }
 
@@ -489,11 +522,6 @@ body {
     border-radius: 40%;
     border: none;
     cursor: pointer;
-    transition: background 0.3s ease;
-}
-  
-#theme-toggle:hover {
-    filter: invert(20%);
 }
 
 #theme-toggle .theme-icon {
@@ -542,7 +570,7 @@ body {
 
     .content {
         max-height: none;
-        padding-top: 100px;
+        padding-top: 80px;
     }
     
     .entry-location {
