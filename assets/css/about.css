@@ -1,7 +1,7 @@
 @import url('shared.css');
 
 body {
-    font-family: 'Alliance No.2', sans-serif;
+    font-family: var(--font-primary), sans-serif;
     letter-spacing: 0.05em;
     margin: 0;
     padding: 0;
