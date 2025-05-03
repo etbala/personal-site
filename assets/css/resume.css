@@ -517,7 +517,7 @@ body {
     position: fixed;
     top: 35px;
     right: 40px;
-    z-index: 200;
+    z-index: 50;
     background-color: var(--color-header-bg);
     border-radius: 40%;
     border: none;
