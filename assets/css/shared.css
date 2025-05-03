@@ -76,7 +76,7 @@
 
     /* Icons */
     --filter-logo: invert(0%) brightness(100%);
-    --social-icon-filter: invert(100%) brightness(70%);
+    --social-icon-filter: invert(100%) brightness(80%);
     --social-icon-hover-filter: invert(100%) brightness(100%);
 
     /* Scrollbar */
@@ -89,6 +89,7 @@
     /* Backgrounds and containers */
     --color-body-bg: #d5d5d5;
     --color-container-bg: rgba(190, 190, 190, 0.25);
+    --color-header-bg: #dbdbdb;
     --gradient-sidebar: linear-gradient(45deg, rgba(230, 230, 230, 0.4), rgba(230, 230, 230, 0.7));
 
     /* Text colors */
@@ -116,7 +117,7 @@
 
     /* Icons */
     --filter-logo: invert(100%) brightness(87%);
-    --social-icon-filter: invert(40%) brightness(100%);
+    --social-icon-filter: invert(30%) brightness(100%);
     --social-icon-hover-filter: invert(0%) brightness(0%);
 
     /* Scrollbar */
