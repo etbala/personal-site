@@ -1,20 +1,29 @@
-![Site Status](https://img.shields.io/website-up-down-green-red/https/etbala.com.svg)
-[![Visit etbala.com](https://img.shields.io/badge/Visit-etbala.com-blue)](https://etbala.com)
+[![Site Status](https://img.shields.io/website-up-down-green-red/https/etbala.com.svg)](https://etbala.com)
 
 ## Running Locally
 
-Follow these instructions to set up and run the project locally:
+#### Clone the Repository
+```bash
+git clone https://github.com/etbala/personal-site.git
+cd personal-site
+```
 
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/etbala/personal-site.git
-   cd personal-site
-   ```
+#### Local Development
 
-2. **Run the Site:**
-   ```bash
-   python -m http.server 8000
-   ```
+To start a local development server, run:
 
-4. **Access the Application:**
-   Open your browser and navigate to `http://localhost:8000`.
+```bash
+ng serve
+```
+
+Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+
+#### Building
+
+To build the project run:
+
+```bash
+ng build
+```
+
+This will compile your project and store the build artifacts in the `dist/` directory.

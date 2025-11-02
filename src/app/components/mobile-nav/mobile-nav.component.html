@@ -1,0 +1,43 @@
+<nav role="navigation" class="hamburger-nav">
+  <div class="mobile-banner"></div>
+  
+  <div class="menuToggle" [class.open]="isMenuOpen">
+    
+    <button class="burger-button" (click)="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    
+    <ul class="menu">
+      <li>
+        <a routerLink="/">Home</a>
+      </li>
+      <li>
+        <a href="#education" (click)="closeMenu()">Education</a>
+      </li>
+      <li>
+        <a href="#work-experience" (click)="closeMenu()">Work Experience</a>
+      </li>
+      <li>
+        <a href="#projects" (click)="closeMenu()">Projects</a>
+      </li>
+      <li>
+        <a href="#extracurriculars" (click)="closeMenu()">Extracurriculars</a>
+      </li>
+      <li>
+        <a href="#technologies" (click)="closeMenu()">Technologies</a>
+      </li>
+      <li class="footer-group">
+        <div class="footer-icons">
+          <a href="https://github.com/etbala" target="_blank">
+            <img src="/assets/icons/github.svg" alt="GitHub" class="social-icon">
+          </a>
+          <a href="https://linkedin.com/in/ebalakumar" target="_blank">
+            <img src="/assets/icons/linkedin.svg" alt="LinkedIn" class="social-icon">
+          </a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>

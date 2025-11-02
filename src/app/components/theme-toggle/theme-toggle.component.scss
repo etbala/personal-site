@@ -1,0 +1,19 @@
+#theme-toggle {
+  position: fixed;
+  top: 35px;
+  right: 40px;
+  z-index: 50;
+  background-color: var(--color-header-bg);
+  border-radius: 40%;
+  border: none;
+  cursor: pointer;
+  
+  img {
+    filter: var(--social-icon-filter);
+  }
+
+  .theme-icon {
+    width: 30px;
+    height: 30px;
+  }
+}

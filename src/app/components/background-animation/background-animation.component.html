@@ -1,0 +1,11 @@
+<div class="background-animation">
+  <div *ngFor="let p of particles"
+       class="particle"
+       [style.width]="p.width"
+       [style.height]="p.height"
+       [style.left]="p.left"
+       [style.top]="p.top"
+       [style.animation-delay]="p.animationDelay"
+       [style.animation-duration]="p.animationDuration">
+  </div>
+</div>

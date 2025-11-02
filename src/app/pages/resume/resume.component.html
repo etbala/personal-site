@@ -1,0 +1,90 @@
+<div class="container">
+  <app-sidebar></app-sidebar>
+  
+  <main class="content">
+    
+    <app-section-header id="education" title="Education"></app-section-header>
+    <section id="education">
+      <app-resume-entry
+        title="Rensselaer Polytechnic Institute"
+        subheader="B.S. Computer Science"
+        location="Troy, NY"
+        date="Expected Dec 2025">
+      </app-resume-entry>
+    </section>
+    
+    <app-section-header id="work-experience" title="Work Experience"></app-section-header>
+    <section id="work-experience">
+      <app-resume-entry
+        title="JPMorgan Chase & Co."
+        subheader="Software Engineer Intern"
+        location="Chicago, IL"
+        date="Jun 2025 - Aug 2025"
+        [details]="jpmcDetails">
+      </app-resume-entry>
+      
+      <app-resume-entry
+        title="Doron Precision Systems, Inc."
+        subheader="Software Engineer Intern"
+        location="Binghamton, NY"
+        date="Jun 2024 - Aug 2024"
+        [details]="doronDetails">
+      </app-resume-entry>
+      
+      <app-resume-entry
+        title="Rensselaer Polytechnic Institute"
+        subheader="Teaching Assistant - CSCI 1200 Data Structures"
+        location="Troy, NY"
+        date="Jan 2025 - May 2025 (Part Time)"
+        [details]="taDetails">
+      </app-resume-entry>
+    </section>
+
+    <app-section-header id="projects" title="Projects"></app-section-header>
+    <section id="projects">
+      <app-resume-entry
+        title="Firm Valuation Calculator"
+        url="https://sharingval.com"
+        [details]="firmValDetails">
+      </app-resume-entry>
+      
+      <app-resume-entry
+        title="CacheDB"
+        url="https://github.com/etbala/CacheDB"
+        [details]="cacheDbDetails">
+      </app-resume-entry>
+      
+      <app-resume-entry
+        title="LeetCode Duels"
+        url="https://github.com/etbala/LeetCodeDuels"
+        [details]="leetCodeDuelsDetails">
+      </app-resume-entry>
+      
+      <app-resume-entry
+        title="SearchRPI"
+        url="https://github.com/SearchRPI"
+        [details]="searchRpiDetails">
+      </app-resume-entry>
+    </section>
+
+    <app-section-header id="extracurriculars" title="Extracurriculars"></app-section-header>
+    <section id="extracurriculars">
+      <app-resume-entry
+        title="Rensselaer Center for Open Source"
+        subheader="Mentor"
+        location="Troy, NY"
+        date="Jan 2025 - Present">
+      </app-resume-entry>
+    </section>
+
+    <app-section-header id="technologies" title="Technologies"></app-section-header>
+    <section id="technologies">
+      <div class="tech-grid">
+        <app-tech-category title="Languages" [items]="languages"></app-tech-category>
+        <app-tech-category title="Frameworks / Libraries" [items]="frameworks"></app-tech-category>
+        <app-tech-category title="Development Tools" [items]="devTools"></app-tech-category>
+        <app-tech-category title="Databases" [items]="databases"></app-tech-category>
+      </div>
+    </section>
+  </main>
+</div>
