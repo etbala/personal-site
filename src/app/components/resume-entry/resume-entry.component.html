@@ -1,7 +1,7 @@
 <div class="content-entry">
   <div class="entry-header">
     <div class="entry-title-group">
-      <h3 class="entry-title" *ngIf="title">{{ title }}</h3>
+      <h3 class="entry-title" *ngIf="entryTitle">{{ entryTitle }}</h3>
       <span class="entry-subheader" *ngIf="subheader">{{ subheader }}</span>
     </div>
     <span class="entry-location" *ngIf="location">{{ location }}</span>
@@ -10,6 +10,10 @@
   
   <div class="entry-meta" *ngIf="date">
     <span class="entry-date">{{ date }}</span>
+  </div>
+
+  <div class="entry-technologies" *ngIf="technologies && technologies.length > 0">
+    <app-tech-item *ngFor="let tech of technologies" [item]="tech"></app-tech-item>
   </div>
   
   <ul class="entry-details" *ngIf="details && details.length > 0">

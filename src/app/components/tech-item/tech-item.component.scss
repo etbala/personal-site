@@ -1,0 +1,20 @@
+.tech-item {
+  font-family: var(--font-secondary), sans-serif;
+  font-size: 1rem;
+  color: var(--color-text-muted);
+  padding: 5px 10px;
+  background-color: var(--color-elem-bg);
+  border-radius: 8px;
+  transition: color 0.1s ease;
+}
+
+.tech-item:hover {
+  cursor: default;
+  color: var(--color-accent);
+}
+
+@media screen and (max-width: 768px) {
+  .tech-item {
+    font-size: 0.8rem;
+  }
+}
