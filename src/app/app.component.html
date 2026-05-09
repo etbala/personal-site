@@ -1,5 +1,201 @@
-<app-background-anim></app-background-anim>
+<div class="mesh" #meshEl>
+  <div class="blob b1"></div>
+  <div class="blob b2"></div>
+  <div class="blob b3"></div>
+  <div class="blob b4"></div>
+  <div class="blob b5"></div>
+</div>
+<div class="bg-vignette"></div>
+<div class="bg-noise"></div>
 
-<main class="content">
-    <router-outlet></router-outlet>
-</main>
+<div class="app">
+  <section class="hero">
+    <h1 class="hero-name">
+      Ethan Balakumar<span class="hero-cursor" aria-hidden="true"></span>
+    </h1>
+    <div class="hero-cta">
+      <a [href]="resume.links.github" target="_blank" rel="noopener">
+        GitHub <span class="arr">↗</span>
+      </a>
+      <a [href]="resume.links.linkedin" target="_blank" rel="noopener">
+        LinkedIn <span class="arr">↗</span>
+      </a>
+    </div>
+    <a href="#experience" class="hero-scroll" aria-label="Scroll to experience"></a>
+  </section>
+
+  <nav class="rail" [class.show]="railShow" aria-label="Sections">
+    @for (s of sections; track s.id) {
+      <a [href]="'#' + s.id" [class.active]="activeSection === s.id">
+        <span class="tick"></span>
+        <span class="num">{{ s.num }}</span>
+        <span>{{ s.label }}</span>
+      </a>
+    }
+  </nav>
+
+  <section id="experience" class="section" #sectionRef>
+    <div class="section-head">
+      <h2 class="section-title">Experience</h2>
+      <span class="section-rule"></span>
+    </div>
+    @for (item of resume.experience; track item.role) {
+      <div class="row">
+        <div class="row-meta">{{ item.period }}</div>
+        <div class="row-body">
+          <h3 class="row-title">
+            <span>{{ item.role }}</span>
+            @if (item.org) {
+              <span class="org">{{ item.org }}</span>
+            }
+          </h3>
+          @if (item.blurb) {
+            <p class="row-blurb">{{ item.blurb }}</p>
+          }
+          @if (item.stack.length) {
+            <div class="row-tags">
+              @for (tag of item.stack; track tag) {
+                <span class="tag">{{ tag }}</span>
+              }
+            </div>
+          }
+          @if (item.links.length) {
+            <div class="row-links">
+              @for (link of item.links; track link.label) {
+                <a [href]="link.href" target="_blank" rel="noopener">
+                  {{ link.label }} <span class="arr">↗</span>
+                </a>
+              }
+            </div>
+          }
+        </div>
+      </div>
+    }
+  </section>
+
+  <section id="opensource" class="section" #sectionRef>
+    <div class="section-head">
+      <h2 class="section-title">Open Source</h2>
+      <span class="section-rule"></span>
+    </div>
+    @for (item of resume.opensource; track item.role) {
+      <div class="row">
+        <div class="row-meta">{{ item.period }}</div>
+        <div class="row-body">
+          <h3 class="row-title">
+            <span>{{ item.role }}</span>
+            @if (item.org) {
+              <span class="org">{{ item.org }}</span>
+            }
+          </h3>
+          @if (item.blurb) {
+            <p class="row-blurb">{{ item.blurb }}</p>
+          }
+          @if (item.stack.length) {
+            <div class="row-tags">
+              @for (tag of item.stack; track tag) {
+                <span class="tag">{{ tag }}</span>
+              }
+            </div>
+          }
+          @if (item.links.length) {
+            <div class="row-links">
+              @for (link of item.links; track link.label) {
+                <a [href]="link.href" target="_blank" rel="noopener">
+                  {{ link.label }} <span class="arr">↗</span>
+                </a>
+              }
+            </div>
+          }
+        </div>
+      </div>
+    }
+  </section>
+
+  <section id="projects" class="section" #sectionRef>
+    <div class="section-head">
+      <h2 class="section-title">Projects</h2>
+      <span class="section-rule"></span>
+    </div>
+    @for (item of resume.projects; track item.role) {
+      <div class="row">
+        <div class="row-meta">{{ item.period }}</div>
+        <div class="row-body">
+          <h3 class="row-title">
+            <span>{{ item.role }}</span>
+            @if (item.org) {
+              <span class="org">{{ item.org }}</span>
+            }
+          </h3>
+          @if (item.blurb) {
+            <p class="row-blurb">{{ item.blurb }}</p>
+          }
+          @if (item.stack.length) {
+            <div class="row-tags">
+              @for (tag of item.stack; track tag) {
+                <span class="tag">{{ tag }}</span>
+              }
+            </div>
+          }
+          @if (item.links.length) {
+            <div class="row-links">
+              @for (link of item.links; track link.label) {
+                <a [href]="link.href" target="_blank" rel="noopener">
+                  {{ link.label }} <span class="arr">↗</span>
+                </a>
+              }
+            </div>
+          }
+        </div>
+      </div>
+    }
+  </section>
+
+  <section id="education" class="section" #sectionRef>
+    <div class="section-head">
+      <h2 class="section-title">Education</h2>
+      <span class="section-rule"></span>
+    </div>
+    @for (item of resume.education; track item.role) {
+      <div class="row">
+        <div class="row-meta">{{ item.period }}</div>
+        <div class="row-body">
+          <h3 class="row-title">
+            <span>{{ item.role }}</span>
+            @if (item.org) {
+              <span class="org">{{ item.org }}</span>
+            }
+          </h3>
+          @if (item.blurb) {
+            <p class="row-blurb">{{ item.blurb }}</p>
+          }
+        </div>
+      </div>
+    }
+  </section>
+
+  <section id="skills" class="section" #sectionRef>
+    <div class="section-head">
+      <h2 class="section-title">Skills</h2>
+      <span class="section-rule"></span>
+    </div>
+    @for (group of resume.skills; track group.cat) {
+      <div class="skills-grid">
+        <div class="skills-cat">{{ group.cat }}</div>
+        <div class="skills-list">
+          @for (item of group.items; track item; let i = $index) {
+            <span [class.dim]="i % 2 === 1">{{ item }}</span>
+          }
+        </div>
+      </div>
+    }
+  </section>
+
+  <footer class="footer">
+    <span>© {{ year }} Ethan Balakumar</span>
+    <span class="links">
+      <a [href]="resume.links.github" target="_blank" rel="noopener">github ↗</a>
+      <a [href]="resume.links.linkedin" target="_blank" rel="noopener">linkedin ↗</a>
+    </span>
+  </footer>
+</div>
